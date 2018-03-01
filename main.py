@@ -1,7 +1,11 @@
 from objects import *
 from reading import *
+from tools import *
+
+grid = getGrid("a_example.in")
 
 listRides = listRides("a_example.in")
+VehicleList = initializeVehicleList(grid)
 
 
 r = Ride();
