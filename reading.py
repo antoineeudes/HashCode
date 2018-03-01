@@ -2,7 +2,7 @@ from copy import deepcopy
 
 def read(fichier):
     document = open(fichier, "r")
-
+    L=[]
     for line in document:
         M=[]
         J = line.strip().split(' ')
