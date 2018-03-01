@@ -2,17 +2,17 @@ from tools import *
 
 
 class Grid:
-    rows
-    columns
-    vehicleNumber
-    rideNumber
-    bonus
-    timeLimit
+    rows = 0
+    columns = 0
+    vehicleNumber = 0
+    rideNumber = 0
+    bonus = 0
+    timeLimit = 0
 
 class Vehicle:
     position=[0,0]
     remainingTime=0
-    virtualPosition
+    virtualPosition=[0,0]
     rides = []
 
     def addRide(self, ride):
@@ -34,12 +34,12 @@ class Vehicle:
 
 
 class Ride:
-    index
-    startIntersection
-    finishIntersection
-    travelDuration
-    earliestStart
-    latestFinish
+    index = -1
+    startIntersection = [0,0]
+    finishIntersection = [0,0]
+    travelDuration = 0
+    earliestStart = 0
+    latestFinish = 0
     startTime=False
     vehicle=False
 
