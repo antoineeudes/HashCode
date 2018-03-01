@@ -10,8 +10,6 @@ VehicleList = initializeVehicleList(grid)
 r = Ride()
 r.index = 0
 
-
-
 v = Vehicle()
 v.addRide(r)
 r.index = 1
@@ -26,4 +24,14 @@ v.addRide(r)
 
 listVehicles = [v]
 
+
 write(listVehicles)
+
+
+
+def assignmentVehicles(list_vehicles, list_rides, grid):
+    for
+    return None
+
+if __name__ == "__main__":
+    assignmentVehicles(VehicleList, listRides)

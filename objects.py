@@ -30,9 +30,6 @@ class Vehicle:
         self.remainingTime = 0
 
 
-
-
-
 class Ride:
     index = -1
     startIntersection = [0,0]

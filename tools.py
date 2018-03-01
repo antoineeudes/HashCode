@@ -11,3 +11,12 @@ def initializeVehicleList(grid):
          VehicleList.append(v)
 
     return VehicleList
+
+def virtualDistance(ride, vehicle, time, maxTime):
+    dist =
+    if time >= ride.latestFinish - ride.travelDuration - norme1(ride.startIntersection, vehicle.position) - :
+        #Cannot be achieved in time
+        return maxTime
+    else:
+
+    s = vehicle.remainingTime + norme1(ride.startIntersection, vehicle.position) - 
