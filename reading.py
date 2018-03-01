@@ -1,4 +1,5 @@
 from copy import deepcopy
+from objects import *
 
 def read(fichier):
     document = open(fichier, "r")

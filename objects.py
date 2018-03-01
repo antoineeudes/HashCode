@@ -2,18 +2,23 @@ from tools import *
 
 
 class Grid:
-    rows = 0
-    columns = 0
-    vehicleNumber = 0
-    rideNumber = 0
-    bonus = 0
-    timeLimit = 0
+
+    def __init__(self):
+        rows = 0
+        columns = 0
+        vehicleNumber = 0
+        rideNumber = 0
+        bonus = 0
+        timeLimit = 0
 
 class Vehicle:
-    position=[0,0]
-    remainingTime=0
-    virtualPosition=[0,0]
-    rides = []
+
+
+    def __init__(self):
+        self.position=[0,0]
+        self.remainingTime=0
+        self.virtualPosition=[0,0]
+        self.rides = []
 
     def addRide(self, ride):
         self.rides.append(ride)
@@ -34,14 +39,16 @@ class Vehicle:
 
 
 class Ride:
-    index = -1
-    startIntersection = [0,0]
-    finishIntersection = [0,0]
-    travelDuration = 0
-    earliestStart = 0
-    latestFinish = 0
-    startTime=False
-    vehicle=False
+
+    def __init__(self):
+        index = -1
+        startIntersection = [0,0]
+        finishIntersection = [0,0]
+        travelDuration = 0
+        earliestStart = 0
+        latestFinish = 0
+        startTime=False
+        vehicle=False
 
     def isReachable(self, vehicle):
         #Tell if a vehicle can reach a ride and arrive on time

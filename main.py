@@ -3,23 +3,28 @@ from reading import *
 
 listRides = listRides("a_example.in")
 
-r = Ride()
-r.index = 0
 
-
+r = Ride();
+r.index = 10
 
 v = Vehicle()
-v.addRide(r)
-r.index = 1
-v.addRide(r)
-r.index = 3
-v.addRide(r)
-r.index = 2
-v.addRide(r)
-r.index = 5
-v.addRide(r)
+v2 = Vehicle()
+
+# for ride in listRides:
+#     v.addRide(ride)
+
+n=len(listRides)
+for i in range(int(n/2)):
+    v.addRide(listRides[i])
 
 
-listVehicles = [v]
+for i in range(1, n):
+    v2.addRide(listRides[i])
+
+# v2.addRide(r)
+
+# print(len(v2.rides))
+
+listVehicles = [v, v2]
 
 write(listVehicles)
