@@ -28,11 +28,19 @@ def listRides(fichier):
         r.earliestStart = L[i][4]
         r.latestFinish = L[i][5]
         r.travelDuration = norme1(r.finishIntersection, r.startIntersection)
-
         Rides.append(r)
     return Rides
 
 def getGrid():
+    L = read(fichier)
+    g = Grid()
+    g.rows = L[0][0]
+    g.columns = L[0][1]
+    g.vehicleNumber = L[0][2]
+    g.rideNumber = L[0][3]
+    g.bonus = L[0][4]
+    g.timeLimit = L[0][5]
+    return g
 
 
 def write(listVehicles):
