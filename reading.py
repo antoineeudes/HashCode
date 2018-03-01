@@ -47,11 +47,11 @@ def write(listVehicles):
     document = open("output.in", "w")
     for vehicle in listVehicles:
         n = len(vehicle.rides)
-        document.write(n)
+        document.write(str(n))
         document.write(" ")
 
         for i in range(n):
-            document.write(vehicle.rides[i].index)
+            document.write(str(vehicle.rides[i].index))
             if i < n-1:
                 document.write(" ")
 

@@ -16,8 +16,8 @@ class Vehicle:
     rides = []
 
     def addRide(self, ride):
-        rides.append(ride)
-        self.remainingTime=norme1(self.position, startIntersection)+norme1(finishIntersection,startIntersection)
+        self.rides.append(ride)
+        self.remainingTime=norme1(self.position, ride.startIntersection)+norme1(ride.finishIntersection,ride.startIntersection)
         self.position=ride.finishIntersection
 
     def refresh():
