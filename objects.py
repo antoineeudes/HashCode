@@ -28,19 +28,21 @@ class Vehicle:
 
     def free():
         self.remainingTime = 0
-        
+
 
 
 
 
 class Ride:
+    index
     startIntersection
     finishIntersection
+    travelDuration
     earliestStart
     latestFinish
     startTime=False
-
     vehicle=False
 
     def isReachable(self, vehicle):
-        if norme1(vehicle.position, self.startIntersection) + vehicle.remainingTime <
+        #Tell if a vehicle can reach a ride and arrive on time
+        return norme1(vehicle.position, self.startIntersection) + vehicle.remainingTime + travelDuration < latestFinish
