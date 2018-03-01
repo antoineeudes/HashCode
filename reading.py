@@ -16,7 +16,8 @@ def read(fichier):
     document.close()
     return L
 
-def listRides(L):
+def listRides(fichier):
+    L = read(fichier)
     Rides = []
     n = len(L)
     for i in range(1, n):
@@ -31,6 +32,7 @@ def listRides(L):
         Rides.append(r)
     return Rides
 
+def getGrid():
 
 
 def write(listVehicles):
