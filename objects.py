@@ -4,12 +4,12 @@ from tools import *
 class Grid:
 
     def __init__(self):
-        rows = 0
-        columns = 0
-        vehicleNumber = 0
-        rideNumber = 0
-        bonus = 0
-        timeLimit = 0
+        self.rows = 0
+        self.columns = 0
+        self.vehicleNumber = 0
+        self.rideNumber = 0
+        self.bonus = 0
+        self.timeLimit = 0
 
 class Vehicle:
 
@@ -38,14 +38,14 @@ class Vehicle:
 class Ride:
 
     def __init__(self):
-        index = -1
-        startIntersection = [0,0]
-        finishIntersection = [0,0]
-        travelDuration = 0
-        earliestStart = 0
-        latestFinish = 0
-        startTime=False
-        vehicle=False
+        self.index = -1
+        self.startIntersection = [0,0]
+        self.finishIntersection = [0,0]
+        self.travelDuration = 0
+        self.earliestStart = 0
+        self.latestFinish = 0
+        self.startTime=False
+        self.vehicle=False
 
     def isReachable(self, vehicle):
         #Tell if a vehicle can reach a ride and arrive on time
