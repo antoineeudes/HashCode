@@ -1,4 +1,4 @@
-from tools import *
+from tools import norme1
 
 
 class Grid:
@@ -11,8 +11,8 @@ class Grid:
         self.bonus = 0
         self.timeLimit = 0
 
-class Vehicle:
 
+class Vehicle:
 
     def __init__(self):
         self.position=[0,0]
@@ -20,7 +20,7 @@ class Vehicle:
         self.virtualPosition=[0,0]
         self.rides = []
 
-    def addRide(self, ride):
+    def addRide(ride):
         self.rides.append(ride)
         self.remainingTime=norme1(self.position, ride.startIntersection)+norme1(ride.finishIntersection,ride.startIntersection)
         self.position=ride.finishIntersection
@@ -47,6 +47,6 @@ class Ride:
         self.startTime=False
         self.vehicle=False
 
-    def isReachable(self, vehicle):
+    def isReachable(vehicle):
         #Tell if a vehicle can reach a ride and arrive on time
         return norme1(vehicle.position, self.startIntersection) + vehicle.remainingTime + travelDuration < latestFinish

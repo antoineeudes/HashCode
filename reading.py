@@ -32,7 +32,7 @@ def listRides(fichier):
         Rides.append(r)
     return Rides
 
-def getGrid():
+def getGrid(fichier):
     L = read(fichier)
     g = Grid()
     g.rows = L[0][0]
